@@ -123,6 +123,8 @@ main h2 {
 .button:hover {
     background-color: #E699B2
 
+/* Footer Styles */
+
 .footer-container {
     display: flex;
     justify-content: space-around;
