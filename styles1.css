@@ -122,8 +122,14 @@ main h2 {
 
 .button:hover {
     background-color: #E699B2
+}
 
 /* Footer Styles */
+footer {
+    background-color: #2E4057;
+    color: #C1CFD6;
+    padding: 20px;
+}
 
 .footer-container {
     display: flex;
