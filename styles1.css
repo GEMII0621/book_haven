@@ -69,6 +69,59 @@ main h2 {
     margin-top: 0;
 }
 
+.gallery {
+    display: flex;
+    fex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    backgroun-color: #FFF7EE;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.img-container {
+    background-color: #F7B3CC;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.product img{
+    width: 50%;
+    heght: auto;
+}
+
+.product p {
+    margn: 10px 0;
+}
+.product a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F7B3CC;
+    text-decoration: none;
+    color: #131C26;
+    border-radius: 5px;
+}
+
+.button {
+    font-family: Trebuchet MS, sans-serif;
+    color: #131C26;
+    background-color: #F7B3CC;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #E699B2
 
 .footer-container {
     display: flex;
