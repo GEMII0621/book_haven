@@ -105,27 +105,28 @@ html lang="en">
             </table>
     </main>
 
-    <footer>
-        <table style="margin-left:auto;margin-right:auto;">
-            <tr>
-                <td style="font-family:Trebuchet;color:131C26;">
+     <footer>
+        <div class="footer-container">
+            <div class="newsletter">
                 <form action="/newsletter.php">
-                <label for="email" style="color:#C1CFD6;">Sign up for our Newsletter:</label>
-                <br>
-                <input type="email" id="email" name="email">
-                <br>
-                <input type="submit" value="Submit" style="background-color:#F7B3CC;">
+                    <label for="email">Sign up for our Newsletter:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Submit" class="submit-btn">
                 </form>
-                </td>
-
-                <td style="font-family:Trebuchet;text-align:center;color:#C1CFD6;">Contact Us: (123)456-7890 | info@bookhaven.com | <img src="./images/socialmedia.png">
-                </td>
-            </tr>
-        </table>
+            </div>
+            <div class="contact">
+                <p>Contact Us: (123)456-7890 | info@bookhaven.com</p>
+                <img src="./images/socialmedia.png" alt="Social Media">
+            </div>
+        </div>
         <nav>
-        <p style= "font-family:Trebuchet;font-size:100%;text-align:center;background-color:#F7B3CC;"> <a href="index.html">Home</a> | <a href="gallery.html">Gallery</a> | <a href="about.html">About</a> | <a href="donate.html">Donate</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
         </nav>
     </footer>
-
 </body>
-</html>
+</html>>
