@@ -64,16 +64,13 @@ main {
     padding: 20px;
 }
 
-main h2 {
-    font-size: 2em;
-    margin-top: 0;
-}
-
 /* Section Titles */
 .section-titles {
     text-decoration: underline;
-    background-color: #EE583F;
+    background-color: #FFF7EE;
     padding: 10px;
+    font-size: 2em;
+    margin-top: 0;
 }
 
 /* Content */
