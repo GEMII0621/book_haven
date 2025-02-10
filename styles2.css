@@ -76,8 +76,8 @@ main h2 {
 
 .content {
     background-color: #FFF7EE;
-    color: #131C26;
     padding: 15px;
+    color: #131C26;
     text-align: left;
     width: 80%;
     margin: auto;
@@ -95,7 +95,7 @@ main h2 {
     border: 1px solid #131C26;
 }
 .team-table img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
