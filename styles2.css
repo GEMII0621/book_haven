@@ -129,12 +129,13 @@ main h2 {
     padding: 15px;
     text-align: center;
     align: center;
-    width: 60%;
+    width: 40%;
     margin: 20px auto; 
 }
 
 .form-table input, .form-table textarea {
-    width: auto;
+    width: 50%;
+    height: auto;
     padding: 5px;
     margin: 5px 0;
 }
