@@ -70,6 +70,7 @@ main h2 {
 }
 
 .section-title {
+    background-color: #EE583F;
     text-decoration: underline;
     padding: 10px;
     font-size: 2em;
