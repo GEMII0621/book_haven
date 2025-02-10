@@ -81,10 +81,6 @@ main h2 {
 
 .team-table {
     background-color: #FFF7EE;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    border-collapse: collapse;
     display: flex;
     fex-wrap: wrap;
     justify-content: center;
