@@ -146,7 +146,7 @@ footer {
 }
 
 .newsletter input[type="email"] {
-    padding: 10pz;
+    padding: 10px;
     border: 1px solid #131C26;
     border-radius: 5px;
     width: 250px;
