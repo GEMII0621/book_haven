@@ -64,8 +64,10 @@ main {
     padding: 20px;
 }
 
-.section-title {
-    background-color: #EE583F;
+main h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #131C26;
     text-decoration: underline;
     padding: 10px;
     font-size: 2em;
