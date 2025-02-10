@@ -93,7 +93,7 @@ main h2 {
     border-collapse: collapse;
 }
 
-.team-table th, .team-table td{
+.team-table th, .team-table td {
     padding: 15 px;
     border: 1px solid #131C26;
 }
@@ -127,11 +127,6 @@ footer {
     background-color: #2E4057;
     color: #C1CFD6;
     padding: 20px;
-}
-
-.contact-table th, .form-table th {
-    font-size: 18px;
-    text-decoration: underline;
 }
 
 .footer-container {
