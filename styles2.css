@@ -87,7 +87,14 @@ main h2 {
     border-collapse: collapse;
 }
 
+.team-table tr {
+    height: auto;
+    min-height: 250px;
+}
+
 .team-table th, .team-table td {
+    height: auto;
+    min-height: 250px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: center;
