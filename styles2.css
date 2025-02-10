@@ -64,7 +64,6 @@ main {
     padding: 20px;
 }
 
-/* Section Titles */
 .section-title {
     text-decoration: underline;
     background-color: #EE583F;
@@ -73,7 +72,6 @@ main {
     margin-top: 0;
 }
 
-/* Content */
 .content {
     background-color: #FFF7EE;
     padding: 15px;
@@ -82,7 +80,6 @@ main {
     margin: auto;
 }
 
-/* Team Table */
 .team-table {
     background-color: #FFF7EE;
     width: 90%;
