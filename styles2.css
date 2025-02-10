@@ -87,8 +87,7 @@ main h2 {
     border-collapse: collapse;
 }
 
-.team-table tr, .team-table th, .team-table td {
-    max-width: 300px;
+.team-table th, .team-table td {
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: center;
@@ -99,16 +98,7 @@ main h2 {
         width: 100%;
     }
 
-    .team-table tr {
-        display: block;
-        width: 100%;
-    }
-
-    .team-table th {
-        display: block;
-        width: 100%;
-    }
-
+    .team-table th,
     .team-table td {
         display: block;
         width: 100%;
