@@ -85,6 +85,11 @@ main h2 {
     max-width: 1000px;
     margin: auto;
     border-collapse: collapse;
+    display: flex;
+    fex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .team-table tr {
