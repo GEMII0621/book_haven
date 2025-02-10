@@ -95,12 +95,12 @@ main {
     border: 1px solid #131C26;
 }
 .team-table img {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
 /* Contact and Form Tables */
-.contact-table, .form- table {
+.contact-table, .form-table {
     background-color: #FFF7EE;
     padding: 15px;
     text-align: center;
