@@ -85,7 +85,7 @@ main h2 {
 
 .team-table {
     background-color: #FFF7EE;
-    width: 70%;
+    width: 90%;
     margin: auto;
     border-collapse: collapse;
 }
@@ -95,7 +95,7 @@ main h2 {
     border: 1px solid #131C26;
 }
 .team-table img {
-    width: 10%;
+    width: 100%;
     height: auto;
 }
 
