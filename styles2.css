@@ -86,17 +86,22 @@ main h2 {
 .team-table {
     background-color: #FFF7EE;
     width: 90%;
+    max-width: 1000px;
     margin: auto;
     border-collapse: collapse;
 }
 
 .team-table th, .team-table td {
-    padding: 15px;
-    border: 1px solid #131C26;
+    max-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 .team-table img {
-    width: 100%;
+    max-width: 200px;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 /* Contact and Form Tables */
