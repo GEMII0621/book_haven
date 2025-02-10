@@ -65,7 +65,7 @@ main {
 }
 
 /* Section Titles */
-.section-titles {
+.section-title {
     text-decoration: underline;
     background-color: #FFF7EE;
     padding: 10px;
@@ -91,7 +91,7 @@ main {
 }
 
 .team-table th, .team-table td {
-    padding: 15 px;
+    padding: 15px;
     border: 1px solid #131C26;
 }
 .team-table img {
@@ -108,7 +108,7 @@ main {
     margin: 20px auto; 
 }
 
-.form-table input, .form-able textarea {
+.form-table input, .form-table textarea {
     width: 80%;
     padding: 5px;
     margin: 5px 0;
