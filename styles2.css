@@ -115,7 +115,7 @@ main h2 {
 }
 
 .form-table input, .form-table textarea {
-    width: 80%;
+    width: auto;
     padding: 5px;
     margin: 5px 0;
 }
