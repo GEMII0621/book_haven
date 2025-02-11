@@ -85,11 +85,9 @@ main h2 {
 
 .team-table {
     background-color: #FFF7EE;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
 }
 
 .team-table tr {
