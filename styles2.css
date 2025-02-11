@@ -152,7 +152,9 @@ main h2 {
 .form-table input[type="submit"] {
     background-color: #F7B3CC;
     font-weight: bold;
+    color: #131C26
     cursor: pointer;
+    margin-top: 15px
 }
 
 footer {
