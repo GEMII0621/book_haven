@@ -158,11 +158,8 @@ main h2 {
 }
 
 .form-table input[type="submit"] hover {
-    background-color: #F7B3CC;
-    font-weight: bold;
-    color: #131C26;
-    cursor: pointer;
-    margin-top: 15px;
+    background-color: #7A4F73;
+    color:FFF7EE;
 }
 
 footer {
