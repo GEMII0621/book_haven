@@ -150,19 +150,19 @@ main h2 {
 }
 
 .form-table input[type="submit"] {
-    e-color: #F7B3CC;
+    background-color: #F7B3CC;
     font-weight: bold;
-    color: #131C26e
+    color: #131C26;
     cursor: pointer;
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .form-table input[type="submit"] hover {
-    e-color: #F7B3CC;
+    background-color: #F7B3CC;
     font-weight: bold;
-    color: #131C26e
+    color: #131C26;
     cursor: pointer;
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 footer {
