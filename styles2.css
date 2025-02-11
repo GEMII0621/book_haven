@@ -118,6 +118,10 @@ main h2 {
         display: block;
         width: 100%;
     }
+
+    . team-table img {
+        max-width:100%;
+        height: auto;
 }
 
 .contact-table, .form-table {
