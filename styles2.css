@@ -55,6 +55,10 @@ nav {
     font-weight: bold;
 }
 
+.nav-links a:hover {
+    color: #7A4F73
+}
+
 main {
     background-color: #EE583F;
     padding: 20px;
