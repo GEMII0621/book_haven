@@ -121,6 +121,10 @@ main h2 {
     color: #131C26; 
 }
 
+.contact-table u {
+    font-weight: bold;
+}
+
 .form-table {
     background-color: #FFF7EE;
     padding: 20px;
@@ -130,15 +134,24 @@ main h2 {
     color: #131C26; 
 }
 
+. form-table label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .form-table input, .form-table textarea {
-    width: 50%;
-    height: auto;
-    padding: 5px;
-    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #131C26;
+    border-radius: 5px;
+    
 }
 
 .form-table input[type="submit"] {
     background-color: #F7B3CC;
+    font-weight: bold;
     cursor: pointer;
 }
 
