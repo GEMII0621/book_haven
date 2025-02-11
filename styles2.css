@@ -14,10 +14,10 @@ header {
 
 header h1 {
     font-size: 3em;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #131C26;
 }
 
 header .logo {
@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-links {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -61,15 +61,15 @@ nav {
 
 main {
     background-color: #EE583F;
-    padding: 20px;
+    padding: 40px 10%;
+    color: #131C26;
 }
 
 main h2 {
     font-size: 2em;
     margin-top: 0;
     color: #131C26;
-    text-decoration: underline;
-    padding: 10px;
+    padding: 40px 10%;
     font-size: 2em;
     margin-top: 0;
 }
@@ -78,8 +78,8 @@ main h2 {
     background-color: #FFF7EE;
     padding: 15px;
     color: #131C26;
-    text-align: left;
-    width: 80%;
+    line-height: 1.6;
+    width: 800px;
     margin: auto;
 }
 
