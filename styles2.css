@@ -90,18 +90,21 @@ main h2 {
     border-collapse: collapse;
 }
 
-.team-table tr {
-    height: auto;
-    min-height: 250px;
+.team-table table {
+    width: 100%;
+    border-spacing: 20px;
 }
 
-.team-table th, .team-table td {
-    height: auto;
-    min-height: 250px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: center;
+.team-table th {
+    padding: 10px;
+    color: #131C26;
 }
+
+.team-table td {
+    padding: 15px;
+    color: #131C26;
+    vertical-align: top;
+
 
 .team-table img {
     max-width: 200px;
