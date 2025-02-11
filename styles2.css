@@ -73,7 +73,7 @@ main h2 {
 .content {
     background-color: #FFF7EE;
     padding: 15px;
-    font-color: #131C26;
+    color: #131C26;
     text-align: left;
     width: 80%;
     margin: auto;
@@ -82,7 +82,7 @@ main h2 {
 .team-table {
     background-color: #FFF7EE;
     display: flex;
-    fex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
