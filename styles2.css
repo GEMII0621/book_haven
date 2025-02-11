@@ -101,6 +101,13 @@ main h2 {
     text-align: center;
 }
 
+.team-table img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .team-table {
         width: 100%;
@@ -111,13 +118,6 @@ main h2 {
         display: block;
         width: 100%;
     }
-}
-
-.team-table img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: auto;
 }
 
 .contact-table, .form-table {
