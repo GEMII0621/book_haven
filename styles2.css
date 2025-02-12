@@ -152,7 +152,7 @@ main h2 {
 }
 
 .form-table input, .form-table textarea {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #131C26;
