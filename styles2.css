@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background-color: #2E4057;
     font-family: 'Trebuchet MS', sans-serif;
@@ -7,17 +8,18 @@ body {
     text-align: center;
 }
 
+/*Header Styles*/
 header {
     background-color: #FFF7EE;
-    padding: 40px 10%;
+    padding: 20px 0;
 }
 
 header h1 {
     font-size: 3em;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #131C26;
 }
 
 header .logo {
@@ -32,14 +34,16 @@ header .logo {
     border-top: 2px solid #131C26;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #F7B3CC;
     padding: 10px 0;
 }
 
 .nav-links {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -52,24 +56,15 @@ nav {
     text-decoration: none;
     color: #131C26;
     font-size: 1em;
-    font-weight: bold;
 }
 
-.nav-links a:hover {
-    color: #7A4F73
-}
-
+/* Main Content Styles */
 main {
     background-color: #EE583F;
-    padding: 40px 10%;
-    color: #131C26;
+    padding: 20px;
 }
 
 main h2 {
-    font-size: 2em;
-    margin-top: 0;
-    color: #131C26;
-    padding: 40px 10%;
     font-size: 2em;
     margin-top: 0;
 }
@@ -172,7 +167,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flez-wrap: wrap;
     margin-bottom: 20px;
 }
 
@@ -186,7 +181,7 @@ footer {
 }
 
 .newsletter input[type="email"] {
-    padding: 10px;
+    padding: 10pz;
     border: 1px solid #131C26;
     border-radius: 5px;
     width: 250px;
