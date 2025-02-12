@@ -81,6 +81,67 @@ main h2 {
     margin-top: 0;
 }
 
+.donations-table {
+    background-color: #FFF7EE;
+    border: 1px solid #131C26;
+    border-radius: 8px;
+    padding: 15px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.donations-table th, td {
+   border: 1px solid #131C26;
+    border-radius: 8px;
+}
+
+
+.form {
+    background-color: #FFF7EE;
+    padding: 15px;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+. form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form input {
+    width: 75%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #131C26;
+    border-radius: 5px;
+    box-sizing: border-box;    
+}
+
+.form input[type="submit"] {
+    background-color: #F7B3CC;
+    font-weight: bold;
+    color: #131C26;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 50%
+}
+
+.form input[type="submit"] hover {
+    background-color: #7A4F73;
+    color:FFF7EE;
+}
+
+
 footer {
     background-color: #2E4057;
     color: #C1CFD6;
