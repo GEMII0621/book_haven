@@ -89,18 +89,20 @@ main h2 {
 .team-table th {
     padding: 10px;
     color: #131C26;
+    vertical-align: top;
 }
 
 .team-table td {
     padding: 15px;
     color: #131C26;
     vertical-align: top;
-
+}
 
 .team-table img {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
+    vertical-align: top;
 }
 
 .contact-table {
