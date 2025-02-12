@@ -82,7 +82,12 @@ main h2 {
     padding: 20px;
 }
 
-.team-table img {
+.team-table img{
+    width: 50%;
+    heght: auto;
+}
+
+.img-container {
     background-color: #F7B3CC;
     padding: 10px;
     border-radius: 8px;
