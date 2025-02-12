@@ -91,7 +91,6 @@ main h2 {
     width: 50%
     margin: auto;
     box-sizing: border-box;
-    justify-content: center;
 }
 
 .team-table {
@@ -260,6 +259,6 @@ footer .nav-links a {
     }
 
     .content, .contact-table, .form-table {
-        width: 55%;
+        margin: auto;
     }
 }
