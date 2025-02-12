@@ -89,7 +89,8 @@ main h2 {
     line-height: 1.6;
     max-width: 800px;
     width: 50%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
 }
 
