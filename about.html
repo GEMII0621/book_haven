@@ -42,11 +42,14 @@
             <h2>Our <s>Employees</s> Family</h2>
         <div class="team-table">
             <table>
+                <thead>
                     <tr>
                         <th>Edward and Suzanne</th>
                         <th>Grace and Clark</th>
                         <th>Rose and Levi</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td><img src="./images/owners.jpg" alt="Edward and Suzanne"></td>
                         <td><img src="./images/Son&Wife1.jpg" alt="Grace and Clark"></td>
@@ -91,6 +94,7 @@
                             for books lead me to a love for the arts as a whole!"
                         </td>
                     </tr>
+                </tbody>
             </table>
         </div>
 
@@ -135,31 +139,15 @@
                     <tr>
                         <td>
                             <form action="/comments_page.php" id="formQ">
-                            <label for="fullname">First and Last Name:</label>
-                            <input type="text" id="fullname" name="fullname"> </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email" form="formQ">Email Address:</label>       
-                            <input type="email" id="email" name="email" form="formQ">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="pnumber" form="formQ">Phone Number:</label>
-                            <input type="text" id="pnumber" name="pnumber" form="formQ">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="comments" style="text-align:center;" form="formQ">Additional Comments:</label>
-                            <textarea id="comments" name="comments" form="formQ"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>   
-                            <input type="submit" value="Submit" form="formQ">
+                            <label for="fullname">First and Last Name:</label><br>
+                            <input type="text" id="fullname" name="fullname"> </form><br><br>
+                            <label for="email">Email Address:</label><br>       
+                            <input type="email" id="email" name="email"><br><br>
+                            <label for="pnumber">Phone Number:</label><br>
+                            <input type="text" id="pnumber" name="pnumber"><br><br>
+                            <label for="comments" style="text-align:center;">Additional Comments:</label><br>
+                            <textarea id="comments" name="comments"></textarea><br><br>
+                            <input type="submit" value="Submit">
                         </td> 
                     </tr>
                 </tbody>
