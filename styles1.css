@@ -1,4 +1,8 @@
-/* General Styles */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #2E4057;
     font-family: 'Trebuchet MS', sans-serif;
@@ -6,24 +10,31 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
-/*Header Styles*/
+img {
+    max-width: 100%;
+    height:auto;
+}
+
 header {
     background-color: #FFF7EE;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 3em;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header .logo {
     width: 10%;
+    max-width: 100%;
     margin: 0 20px;
 }
 
@@ -34,7 +45,6 @@ header .logo {
     border-top: 2px solid #131C26;
 }
 
-/* Navigation Styles */
 nav {
     background-color: #F7B3CC;
     padding: 10px 0;
@@ -46,6 +56,7 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -58,7 +69,6 @@ nav {
     font-size: 1em;
 }
 
-/* Main Content Styles */
 main {
     background-color: #EE583F;
     padding: 20px;
@@ -124,11 +134,11 @@ main h2 {
     background-color: #E699B2
 }
 
-/* Footer Styles */
 footer {
     background-color: #2E4057;
     color: #C1CFD6;
     padding: 20px;
+    text-align: center;
 }
 
 .footer-container {
@@ -149,11 +159,12 @@ footer {
 }
 
 .newsletter input[type="email"] {
-    padding: 10pz;
+    padding: 10px;
     border: 1px solid #131C26;
     border-radius: 5px;
     width: 250px;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .submit-btn {
@@ -165,12 +176,17 @@ footer {
     border-radius: 5px;
 }
 
+.submit-btn:hover {
+    background-color: #7A4F73;
+    color: #FFF7EE;
+}
+
 .contact p {
     margin: 10px 0;
 }
 
 .contact img {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-top: 10px;
 }
@@ -190,4 +206,16 @@ footer .nav-links li {
 
 footer .nav-links a {
     font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direciton: column;
+    }
 }
