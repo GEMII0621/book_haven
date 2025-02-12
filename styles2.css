@@ -259,6 +259,6 @@ footer .nav-links a {
     }
 
     .content, .contact-table, .form-table {
-        margin: auto;
+        width: 55%;
     }
 }
