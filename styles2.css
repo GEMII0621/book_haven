@@ -258,11 +258,7 @@ footer .nav-links a {
         max-width: 200px;
     }
 
-    .team-table {
+    .content, .team-table , .contact-table, .form-table {
         width: 95%;
-    }
-
-    .content, .contact-table, .form-table {
-        width: 55%;
     }
 }
