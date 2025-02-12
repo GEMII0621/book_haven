@@ -41,7 +41,7 @@
             
             <h2>Our <s>Employees</s> Family</h2>
         <div class="team-table">
-            <Table>
+            <table>
                     <tr>
                         <th>Edward and Suzanne</th>
                         <th>Grace and Clark</th>
@@ -137,31 +137,30 @@
                         <td>
                             <form action="/comments_page.php" id="formQ">
                             <label for="fullname">First and Last Name:</label>
-                            <input type="text" id="fullname" name="fullname">
+                            <input type="text" id="fullname" name="fullname"> </form>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="email">Email Address:</label>       
-                            <input type="email" id="email" name="email">
+                            <label for="email" form="formQ">Email Address:</label>       
+                            <input type="email" id="email" name="email" form="formQ">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="pnumber">Phone Number:</label>
-                            <input type="text" id="pnumber" name="pnumber">
+                            <label for="pnumber" form="formQ">Phone Number:</label>
+                            <input type="text" id="pnumber" name="pnumber" form="formQ">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="comments" style="text-align:center;">Additional Comments:</label>
-                            <textarea id="comments" name="comments"></textarea>
+                            <label for="comments" style="text-align:center;" form="formQ">Additional Comments:</label>
+                            <textarea id="comments" name="comments" form="formQ"></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td>   
-                            <input type="submit" value="Submit">
-                        </form>
+                            <input type="submit" value="Submit" form="formQ">
                         </td> 
                     </tr>
                 </tbody>
