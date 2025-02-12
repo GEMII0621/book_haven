@@ -108,6 +108,11 @@ main h2 {
     overflow-x: auto;
 }
 
+.team-table th, td {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
 .team-table img{
     width: 100%;
     max-width: 300px;
