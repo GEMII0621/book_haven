@@ -69,6 +69,7 @@ main h2 {
     background-color: #FFF7EE;
     padding: 15px;
     color: #131C26;
+    text-align: left;
     line-height: 1.6;
     width: 800px;
     margin: auto;
@@ -84,9 +85,7 @@ main h2 {
     border-radius: 8px;
     padding: 15px;
     width: 250px;
-    text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    color: #131C26;
 }
 
 .team-table img{
@@ -110,9 +109,7 @@ main h2 {
     border-radius: 8px;
     padding: 15px;
     width: 250px;
-    text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    color: #131C26;
 }
 
 .form-table {
@@ -125,9 +122,7 @@ main h2 {
     border-radius: 8px;
     padding: 15px;
     width: 250px;
-    text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    color: #131C26;
 }
 
 . form-table label {
