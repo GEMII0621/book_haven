@@ -91,6 +91,7 @@ main h2 {
     width: 50%
     margin: auto;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .team-table {
