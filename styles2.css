@@ -111,7 +111,8 @@ main h2 {
     text-align: left;
     width: 50%;
     margin: auto;
-    color: #131C26; 
+    color: #131C26;
+    justify-content: center;
 }
 
 .contact-table u {
@@ -124,7 +125,8 @@ main h2 {
     text-align: left;
     width: 50%;
     margin: auto;
-    color: #131C26; 
+    color: #131C26;
+    justify-content: center;
 }
 
 . form-table label {
