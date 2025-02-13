@@ -123,7 +123,7 @@ main h2 {
     background-color: #FFF7EE;
     border-radius: 8px;
     padding: 15px;
-    width: 80%;
+    width: 150%;
     max-width: 600px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -135,7 +135,7 @@ main h2 {
     background-color: #FFF7EE;
     border-radius: 8px;
     padding: 15px;
-    width: 50%;
+    width: 150%;
     max-width: 600px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -262,6 +262,6 @@ footer .nav-links a {
     }
 
     .content, .team-table , .contact-table, .form-table {
-        width: 95%;
+        width: 150%;
     }
 }
