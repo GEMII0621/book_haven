@@ -161,12 +161,6 @@ main h2 {
     margin-right: auto;
 }
 
-.form-table th {
-    text-size: 3em;
-    text-align: center;
-    line-height: 2em;
-}
-
 . form-table label {
     display: block;
     font-weight: bold;
