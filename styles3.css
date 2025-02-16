@@ -94,11 +94,6 @@ main h2 {
     margin-right: auto;
 }
 
-.donations-table th, td {
-   border: 1px solid #131C26;
-   border-radius: 8px;
-}
-
 . form label {
     display: block;
     font-weight: bold;
