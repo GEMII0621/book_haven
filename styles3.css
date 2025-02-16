@@ -1,84 +1,95 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+footer {
+    background-color: #2E4057;
+    color: #C1CFD6;
+    padding: 20px;
+    text-align: center;
 }
 
-body {
-    background-color: #2E4057;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: #131C26;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flez-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #131C26;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    height:auto;
+.submit-btn {
+    background-color: #F7B3CC;
+    color: #131C26;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-header {
-    background-color: #FFF7EE;
-    padding: 20px 0;
-    text-align: center;
+.submit-btn:hover {
+    background-color: #7A4F73;
+    color: #FFF7EE;
 }
 
-header h1 {
-    font-size: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.contact p {
+    margin: 10px 0;
 }
 
-header .logo {
-    width: 10%;
-    max-width: 100%;
-    margin: 0 20px;
+.contact img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
 }
 
-.divider {
-    width: 100%;
-    margin: 10px auto;
-    border: 0;
-    border-top: 2px solid #131C26;
-}
-
-nav {
+footer nav {
     background-color: #F7B3CC;
     padding: 10px 0;
 }
 
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+footer .nav-links {
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.nav-links li {
-    margin: 0 15px;
+footer .nav-links li {
+    margin: 0 10px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #131C26;
+footer .nav-links a {
     font-size: 1em;
 }
 
-main {
-    background-color: #EE583F;
-    padding: 20px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 8em;
+        flex-direction: column;
+        text-align: center;
+    }
 
-main h2 {
-    font-size: 2em;
-    margin-top: 0;
+    .nav-links {
+        flex-direciton: column;
+    }
+
+    .team-table img{
+        max-width: 200px;
+    }
+
+    .content, .team-table , .contact-table, .form-table {
+        width: 90%;
+    }
 }
 
 .donations-table {
@@ -89,7 +100,8 @@ main h2 {
     width: 90%;
     max-width: 1000px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 10px
+    rgba(0,0,0,0.1);
     margin-left: auto;
     margin-right: auto;
     overflow-x: auto;
@@ -97,7 +109,7 @@ main h2 {
 
 .donations-table th, td {
    border: 1px solid #131C26;
-    border-radius: 8px;
+   border-radius: 8px;
 }
 
 
@@ -218,7 +230,7 @@ footer .nav-links a {
 
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 8em;
         flex-direction: column;
         text-align: center;
     }
@@ -226,3 +238,12 @@ footer .nav-links a {
     .nav-links {
         flex-direciton: column;
     }
+
+    .team-table img{
+        max-width: 200px;
+    }
+
+    .content, .team-table , .contact-table, .form-table {
+        width: 90%;
+    }
+}
