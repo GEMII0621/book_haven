@@ -94,17 +94,9 @@ main h2 {
     margin-right: auto;
 }
 
-.form th {
+.form th, td {
     text-size: ,2.5em;
     text-align: center;
-    line-height: 2em;
-   border: 1px solid #131C26;
-    border-radius: 8px;
-}
-
-.form td {
-    text-size: ,2.5em;
-    text-align: left;
     line-height: 2em;
    border: 1px solid #131C26;
     border-radius: 8px;
