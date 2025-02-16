@@ -42,63 +42,86 @@
                 <tr>
                     <td>
                         <form id="schools">
-                          <input type="checkbox" id="bhe" name="loc_school" value="bhe">
-                          <label for="bhe">Book Haven Elementary</label><br>
-                          <label for="amount">Donate:<br></label>
-                         $<input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="mse" name="loc_school" value="mse">
-                          <label for="mse">Main Street Elementary</label><br>
-                          <label for="amount"> Donate:<br>$</label>
-                         $<input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="ovh" name="loc_school" value="ovh">
-                          <label for="ovh">Oak View Headstart</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                         $<input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="mrp" name="loc_school" value="mrp">
-                          <label for="mrp">Mountain Ridge Preschool</label><br>
-                          <label for="amount">Donate:<br> $</label>
-                         $<input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>>
+                            <input type="checkbox" id="bhe" name="loc_school" value="bhe">
+                            <label for="bhe">Book Haven Elementary</label><br>
+                            <label for="amount">Donate:<br></label>
+                           $<input type="number" id="amount" name="amount" step="0.01" min="0">
                         </form>
                     </td>
-                    <td>
+                    <td> 
                         <form id="shelters">
-                          <input type="checkbox" id="fm" name="loc_school" value="fm">
-                          <label for="fm">Family Mission</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="smm" name="loc_school" value="smm">
-                          <label for="smm">Saint Mark Mission</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="mmhg" name="loc_school" value="mmhg">
-                          <label for="mmhg">Mother Mary's Home for Girls</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="smhb" name="loc_school" value="smhb">
-                          <label for="smhb">Saint Matthews Home for Boys</label><br>
-                          <label for="amount">Donate:<br> $</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0">
-                        </form>
+                           <input type="checkbox" id="fm" name="loc_shelter" value="fm">
+                           <label for="fm">Family Mission</label><br>
+                           <label for="amount">Donate:<br></label>
+                          $<input type="number" id="amount" name="amount" step="0.01" min="0">
                     </td>
-                    <td>
+                    <td> 
                         <form id="charities">
-                          <input type="checkbox" id="fmcs" name="loc_school" value="fmcs">
+                          <input type="checkbox" id="fmcs" name="loc_charity" value="fmcs">
                           <label for="fmcs">Family Mission Clothing Store</label><br>
                           <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="mssk" name="loc_school" value="mssk">
-                          <label for="mssk">Main Street Soup Kitchen</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="r2mei" name="loc_school" value="r2mei">
-                          <label for="r2mei">Read2Me Early Intervention</label><br>
-                          <label for="amount">Donate:<br>$</label>
-                          <input type="number" id="amount" name="amount" step="0.01" min="0"><br><br>
-                          <input type="checkbox" id="waow" name="loc_school" value="waow">
-                          <label for="waow">Words Are Our World</label><br>
-                          <label for="amount">Donate:<br> $</label>
                           <input type="number" id="amount" name="amount" step="0.01" min="0">
                         </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="mse" name="loc_school" value="mse" form="schools">
+                        <label for="mse">Main Street Elementary</label><br>
+                        <label for="amount"> Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="schools">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="smm" name="loc_school" value="smm" form="shelters">
+                        <label for="smm">Saint Mark Mission</label><br>
+                        <label for="amount">Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="shelters">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="mssk" name="loc_school" value="mssk" form="charities">
+                        <label for="mssk">Main Street Soup Kitchen</label><br>
+                        <label for="amount">Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="charities">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="ovh" name="loc_school" value="ovh" form="schools">
+                        <label for="ovh">Oak View Headstart</label><br>
+                        <label for="amount">Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="schools"
+                    </td>
+                    <td>
+                        <input type="checkbox" id="mmhg" name="loc_school" value="mmhg" form="shelters">
+                        <label for="mmhg">Mother Mary's Home for Girls</label><br>
+                        <label for="amount">Donate:<br></label>
+                        $<input type="number" id="amount" name="amount" step="0.01" min="0" form="shelters">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="r2mei" name="loc_school" value="r2mei" form="charities">
+                        <label for="r2mei">Read2Me Early Intervention</label><br>
+                        <label for="amount">Donate:<br>$</label>
+                        <input type="number" id="amount" name="amount" step="0.01" min="0" form="charities">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="mrp" name="loc_school" value="mrp" form="schools">
+                        <label for="mrp">Mountain Ridge Preschool</label><br>
+                        <label for="amount">Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="schools">
+                    </td>
+                    <td>
+                       <input type="checkbox" id="smhb" name="loc_school" value="smhb" form="shelters">
+                       <label for="smhb">Saint Matthews Home for Boys</label><br>
+                       <label for="amount">Donate:<br></label>
+                      $<input type="number" id="amount" name="amount" step="0.01" min="0" form="shelters">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="waow" name="loc_school" value="waow" form="charities">
+                        <label for="waow">Words Are Our World</label><br>
+                        <label for="amount">Donate:<br></label>
+                       $<input type="number" id="amount" name="amount" step="0.01" min="0" form="charities">
                     </td>
                 </tr>
                 <tr>
