@@ -221,11 +221,7 @@ footer .nav-links a {
         flex-direciton: column;
     }
 
-    .team-table img{
-        max-width: 200px;
-    }
-
-    .content, .team-table , .contact-table, .form-table {
+    .gallery, .product {
         width: 90%;
     }
 }
