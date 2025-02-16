@@ -82,7 +82,12 @@ main h2 {
 }
 
 main h3 {
-    font-size: 4em;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+main h4 {
+    font-size: 1.5em;
     margin-top: 0;
 }
 
