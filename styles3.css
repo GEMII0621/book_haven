@@ -94,17 +94,6 @@ main h2 {
     margin-right: auto;
 }
 
-.donations-table th {
-    text-size: 3em;
-    text-align: center;
-    line-height: 2em;
-}
-
-.donations-table th, td {
-   border: 1px solid #131C26;
-    border-radius: 8px;
-}
-
 .form label {
     display: block;
     font-weight: bold;
