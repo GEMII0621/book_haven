@@ -83,8 +83,16 @@ main h2 {
 
 .intro-text {
     background-color: #FFF7EE;
-    padding: 10px;
-    margin: 20px 0;
+    padding: 15px;
+    color: #131C26;
+    text-size: 2.5em;
+    text-align: left;
+    line-height: 2em;
+    max-width: 2500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .visit-btn {
@@ -109,7 +117,6 @@ main h2 {
     height: auto;
 }
 
-/* Search Section Styles */
 .search-section {
     background-color: #FFF7EE;
     padding: 20px;
@@ -140,7 +147,6 @@ main h2 {
     border-radius: 5px;
 }
 
-/* Footer Styles */
 footer {
     background-color: #2E4057;
     color: #C1CFD6;
