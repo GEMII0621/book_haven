@@ -420,7 +420,7 @@ footer {
     box-sizing: border-box;
 }
 
-.submit-btn {
+.newsletter input[type="submit"] {
     background-color: #F7B3CC;
     color: #131C26;
     border: none;
@@ -429,7 +429,7 @@ footer {
     border-radius: 5px;
 }
 
-.submit-btn:hover {
+.newsletter input[type="submit"] hover {
     background-color: #7A4F73;
     color: #FFF7EE;
 }
