@@ -204,7 +204,7 @@ footer {
 }
 
 .contact img {
-    width: 80px;
+    width: 200px;
     height: auto;
     margin-top: 10px;
 }
@@ -237,7 +237,7 @@ footer .nav-links a {
         flex-direciton: column;
     }
 
-    .intro-text {
-        width: 90%;
+    .form{
+        width: 125%;
     }
 }
