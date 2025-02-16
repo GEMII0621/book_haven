@@ -81,6 +81,11 @@ main h2 {
     margin-top: 0;
 }
 
+main h3 {
+    font-size: 4em;
+    margin-top: 0;
+}
+
 .intro-text {
     background-color: #FFF7EE;
     padding: 15px;
