@@ -19,12 +19,12 @@ img {
 }
 
 header {
-    background-color: #FFF7EE;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
+    background-color: #FFF7EE;
     font-size: 8em;
     display: flex;
     align-items: center;
