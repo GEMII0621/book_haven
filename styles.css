@@ -148,7 +148,7 @@ main h4 {
     width: 200px;
 }
 
-.search-section button {
+.search-section input[type="submit"] {
     background-color: #F7B3CC;
     color: #131C26;
     border: none;
