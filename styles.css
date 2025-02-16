@@ -309,7 +309,7 @@ main h4 {
 }
 
 .form-table input, .form-table textarea {
-    width: 60%;
+    width: 75%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #131C26;
@@ -323,7 +323,7 @@ main h4 {
     color: #131C26;
     cursor: pointer;
     margin-top: 15px;
-    width: 40%
+    width: 60%
 }
 
 .form-table input[type="submit"] hover {
