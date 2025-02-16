@@ -85,19 +85,26 @@ main h2 {
     background-color: #FFF7EE;
     border-radius: 8px;
     padding: 15px;
-    width: 90%;
+    width: 125%;
     max-width: 1000px;
     text-size: 2.5em;
-    text-align: center;
     line-height: 2em;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     margin-left: auto;
     margin-right: auto;
 }
 
-.form th, td {
+.form th {
     text-size: ,2.5em;
     text-align: center;
+    line-height: 2em;
+   border: 1px solid #131C26;
+    border-radius: 8px;
+}
+
+.form td {
+    text-size: ,2.5em;
+    text-align: left;
     line-height: 2em;
    border: 1px solid #131C26;
     border-radius: 8px;
@@ -110,7 +117,7 @@ main h2 {
 }
 
 .form input, .form-table textarea {
-    width: 75%;
+    width: 50%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #131C26;
