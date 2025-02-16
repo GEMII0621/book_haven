@@ -209,7 +209,7 @@ main h4 {
 }
 
 .button:hover {
-    background-color: #E699B2
+    background-color: #E699B2;
 }
 
 .content {
@@ -323,12 +323,12 @@ main h4 {
     color: #131C26;
     cursor: pointer;
     margin-top: 15px;
-    width: 60%
+    width: 60%;
 }
 
 .form-table input[type="submit"] hover {
     background-color: #7A4F73;
-    color:FFF7EE;
+    color: #FFF7EE;
 }
 
 .form {
@@ -379,12 +379,12 @@ main h4 {
     color: #131C26;
     cursor: pointer;
     margin-top: 15px;
-    width: 50%
+    width: 50%;
 }
 
 .form input[type="submit"] hover {
     background-color: #7A4F73;
-    color:FFF7EE;
+    color: #FFF7EE;
 }
 
 footer {
