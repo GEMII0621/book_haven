@@ -81,6 +81,16 @@ main h2 {
     margin-top: 0;
 }
 
+main h3 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+main h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
 .content {
     background-color: #FFF7EE;
     padding: 15px;
