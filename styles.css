@@ -161,11 +161,7 @@ footer {
     background-color: #2E4057;
     color: #C1CFD6;
     padding: 20px;
-    font-family: 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .footer-container {
@@ -194,7 +190,7 @@ footer {
     box-sizing: border-box;
 }
 
-.newsletter input[type="submit"] {
+.submit-btn {
     background-color: #F7B3CC;
     color: #131C26;
     border: none;
@@ -203,7 +199,7 @@ footer {
     border-radius: 5px;
 }
 
-.newsletter input[type="submit"] hover {
+.submit-btn:hover {
     background-color: #7A4F73;
     color: #FFF7EE;
 }
@@ -234,7 +230,7 @@ footer .nav-links li {
 footer .nav-links a {
     font-size: 1em;
 }
-    
+
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 8em;
