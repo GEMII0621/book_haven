@@ -89,7 +89,7 @@ main h2 {
     text-align: left;
     line-height: 2em;
     max-width: 2500px;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ main h2 {
     border: 1px solid #131C26;
     border-radius: 8px;
     padding: 15px;
-    width: 90%;
+    width: 95%;
     max-width: 5000px;
     text-size: 2.5em;
     text-align: center;
@@ -286,6 +286,6 @@ footer .nav-links a {
     }
 
     .content, .team-table,  {
-        width: 90%;
+        width: 95%;
     }
 }
