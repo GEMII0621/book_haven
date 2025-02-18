@@ -295,7 +295,4 @@ footer .nav-links a {
         flex-direciton: column;
     }
 
-    .content, .team-table {
-        width: 95%;
-    }
 }
