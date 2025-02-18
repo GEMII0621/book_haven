@@ -148,7 +148,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flez-wrap: wrap;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
@@ -219,7 +219,7 @@ footer .nav-links a {
     }
 
     .nav-links {
-        flex-direciton: column;
+        flex-direction: column;
     }
 
     .form {
