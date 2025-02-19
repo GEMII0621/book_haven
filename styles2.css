@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 
-.title-container {
+header .title-container {
     background-color: #FFF7EE;
     font-size: 8em;
     display: flex;
