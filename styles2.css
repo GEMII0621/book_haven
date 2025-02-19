@@ -122,7 +122,6 @@ main h4 {
 }
 
 .team-table th {
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
 }
@@ -144,7 +143,6 @@ main h4 {
     padding: 15px;
     width: 75%;
     max-width: 1000px;
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -153,7 +151,6 @@ main h4 {
 }
 
 .contact-table th {
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
 }
@@ -164,7 +161,6 @@ main h4 {
     padding: 15px;
     width: 75%;
     max-width: 1000px;
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -173,7 +169,6 @@ main h4 {
 }
 
 .form-table th {
-    font-size: 2em;
     line-height: 2em;
 }
 
