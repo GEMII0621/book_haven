@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+.title-container {
     background-color: #FFF7EE;
     font-size: 8em;
     display: flex;
@@ -111,7 +111,7 @@ main h4 {
     border-radius: 8px;
     padding: 15px;
     width: 95%;
-    max-width: 5000px;
+    max-width: 3000px;
     font-size: 1.5em;
     text-align: center;
     line-height: 2em;
@@ -177,7 +177,7 @@ main h4 {
     line-height: 2em;
 }
 
-.form th, td {
+.form-table th, td {
    border: 1px solid #131C26;
     border-radius: 8px;
 }
@@ -208,7 +208,7 @@ main h4 {
 
 .form-table input[type="submit"]:hover {
     background-color: #7A4F73;
-    color:FFF7EE;
+    color: #FFF7EE;
 }
 
 footer {
