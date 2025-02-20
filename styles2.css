@@ -122,7 +122,6 @@ main h4 {
 }
 
 .team-table th {
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
 }
@@ -153,7 +152,6 @@ main h4 {
 }
 
 .contact-table th {
-    font-size: 2em;
     text-align: center;
     line-height: 2em;
 }
@@ -173,7 +171,7 @@ main h4 {
 }
 
 .form-table th {
-    font-size: 2em;
+    text-align: center;
     line-height: 2em;
 }
 
