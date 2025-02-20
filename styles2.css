@@ -295,4 +295,12 @@ footer .nav-links a {
     .nav-links {
         flex-direction: column;
     }
+
+    .contact-tabe, .form-table {
+        width: 75%;
+    }
+
+    .content, .team-table {
+        width: 95%;
+    }
 }
