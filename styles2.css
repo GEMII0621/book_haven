@@ -284,23 +284,3 @@ footer .nav-links li {
 footer .nav-links a {
     font-size: 1em;
 }
-
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 8em;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .contact-tabe, .form-table {
-        width: 75%;
-    }
-
-    .content, .team-table {
-        width: 95%;
-    }
-}
