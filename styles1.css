@@ -90,6 +90,15 @@ main h2 {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 
+.cart a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #F7B3CC;
+    text-decoration: none;
+    color: #131C26;
+    border-radius: 5px;
+}
+
 .cart-button {
     font-family: Trebuchet MS, sans-serif;
     color: #131C26;
