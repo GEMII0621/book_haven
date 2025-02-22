@@ -81,6 +81,29 @@ main h2 {
     margin-top: 0;
 }
 
+.shopping-cart {
+    background-color: #FFF7EE;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.cart-button {
+    font-family: Trebuchet MS, sans-serif;
+    color: #131C26;
+    background-color: #F7B3CC;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: #E699B2
+}
+
 .gallery {
     display: flex;
     fex-wrap: wrap;
