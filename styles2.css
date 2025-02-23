@@ -122,7 +122,6 @@ main h4 {
 }
 
 .team-table th {
-    text-align: center;
     line-height: 2em;
 }
 
@@ -130,7 +129,6 @@ main h4 {
     width: 100%;
     max-width: 300px;
     height: auto;
-    text-align: center;
 }
 
 .contact-table {
