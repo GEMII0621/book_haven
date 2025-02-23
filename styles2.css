@@ -119,7 +119,6 @@ main h4 {
 }
 
 .team-th {
-    .team-table th {
     text-align: center;
     line-height: 2em;
 }
@@ -130,7 +129,7 @@ main h4 {
     line-height: 2em;
 }
 
-.team-img{
+.team-img {
     width: 100%;
     max-width: 300px;
     height: auto;
