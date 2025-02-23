@@ -96,7 +96,7 @@ main h4 {
     padding: 15px;
     color: #131C26;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
     line-height: 2em;
     max-width: 2500px;
     width: 90%;
@@ -121,6 +121,11 @@ main h4 {
 }
 
 .team-table th {
+    text-align: center;
+    line-height: 2em;
+}
+
+.team-table td {
     text-align: center;
     line-height: 2em;
 }
