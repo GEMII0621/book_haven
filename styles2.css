@@ -112,28 +112,34 @@ main h4 {
     padding: 15px;
     width: 95%;
     max-width: 3000px;
-    font-size: 1.5em;
-    text-align: left;
-    line-height: 2em;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     margin-left: auto;
     margin-right: auto;
     overflow-x: auto;
 }
 
-.team-table th {
+.team-th {
+    .team-table th {
+    text-align: center;
     line-height: 2em;
 }
 
-.team-table th, td {
-   border: 1px solid #131C26;
-    border-radius: 8px;
+.team-td {
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 2em;
 }
 
-.team-table img{
+.team-img{
     width: 100%;
     max-width: 300px;
     height: auto;
+    text-align: center;
+}
+
+.team-th, .team-img, .team-td {
+   border: 1px solid #131C26;
+    border-radius: 8px;
 }
 
 .contact-table {
