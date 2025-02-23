@@ -126,11 +126,6 @@ main h4 {
     line-height: 2em;
 }
 
-.team-table td {
-    text-align: center;
-    line-height: 2em;
-}
-
 .team-table img{
     width: 100%;
     max-width: 300px;
