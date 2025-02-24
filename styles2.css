@@ -138,11 +138,6 @@ main h4 {
     line-height: 2em;
 }
 
-.team-th, .team-img, .team-td {
-   border: 1px solid #131C26;
-    border-radius: 8px;
-}
-
 .contact-table {
     background-color: #FFF7EE;
     border-radius: 8px;
