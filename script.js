@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    document.querySelector(".visit-btn").addeventListener("click", function () {
+    document.querySelector(".visit-btn").addEventListener("click", function () {
         alert("Book Haven | 123 Bookstore Rd | Bookstore, SC 12345");
     });
 
