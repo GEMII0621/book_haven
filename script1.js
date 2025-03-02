@@ -1,9 +1,7 @@
  function getCookies(){
-     return document.cookie
-        .split("; ")
-        .reduce((cookies, cookie) => {
+     return document.cookie ? document.cookie.split("; ").reduce((cookies, cookie) => {
             const [name, value] = cookie.split("=");
-             cookies[name] = decodeURIComponent(value);
+            cookies[name] = decodeURIComponent(value);
             return cookies;
         }, {});
  }
@@ -13,9 +11,9 @@ function setCookie(name, value, days) {
     if (days) {
         let date = new Date();
         date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-        expires = "; expires=" + date.touTCString();
+        expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + encodeURIComponent(value) + "; path=/";
+    document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
 }
 
 function getCart() {
@@ -92,7 +90,7 @@ function displayCartItems() {
     cartTotalElement.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
-document.getElementById("empty-cart")?.addEventListener("click, function() {
+document.getElementById("empty-cart")?.addEventListener("click", function() {
     setCookie("cart", JSON.stringify([]), 7);
     displayCartItems();
     updateCartBadge();
