@@ -27,6 +27,8 @@ if (searchValue === "") {
             if (!validateEmail(emailInput)) {
                 event.preventDefault();
                 alert("Please enter a valid email address.");
+            } else {
+                alert("Thank you for signing up for our Newletter!");
             }
         });
     }
