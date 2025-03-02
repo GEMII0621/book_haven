@@ -42,7 +42,7 @@ function addToCart(event) {
     event.preventDefault();
     const productElement = event.target.closest(".product");
     const productName = productElement.querySelector("p").textContent.trim();
-    const productPrice = parseFloat(productElement.querySelector("p:nth-oftype(2)".textContent.replace("Price: $", ""));
+    const productPrice = parseFloat(productElement.querySelector("p:nth-oftype(2)".textContent.replace("Price: $", "")));
     const productImage = productElement.querySelector("img").src;
 
     let cart = getCart();
