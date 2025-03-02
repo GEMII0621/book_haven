@@ -12,7 +12,7 @@ function setCookie(name, value, days) {
     let expires = "";
     if (days) {
         let date = new Date();
-        date.setTime(date.gettime() + days * 24 * 60 * 60 * 1000);
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
         expires = "; expires=" + date.touTCString();
     }
     document.cookie = name + "=" + encodeURIComponent(value) + "; path=/";
@@ -27,7 +27,7 @@ function updateCartBadge() {
     const cart = getCart();
     const cartCountElement = document.querySelector(".cart a");
     if (cartCountElement) {
-        cartCountElement.textConent = 'View Items (${cart.length})';
+        cartCountElement.textContent = `View Items (${cart.length})`;
     }
 
     const badge = document.getElementById("cart-badge");
@@ -40,7 +40,7 @@ function addToCart(event) {
     event.preventDefault();
 
     const productElement = event.target.closest(".product");
-    const productName = product.Element.querySelector("p").textContent.trim();
+    const productName = productElement.querySelector("p").textContent.trim();
     const productPrice = 15.00;
     const productImage = productElement.querySelector("img").src;
 
@@ -68,7 +68,7 @@ function displayCartItems() {
         itemElement.className = "cart-item";
         itemElement.innerHTML = `
             <img src="${item.image}" alt="${item.name}" style="width:50px; height:50px;">
-            <p>$item.name} - $${item.price.toFixed(2)}</p>
+            <p>${item.name} - $${item.price.toFixed(2)}</p>
             <button onclick="removeFromCart(${index})">Remove Item</button>
         `;
         cartItemsContainer.appendChild(itemElement);
@@ -79,7 +79,7 @@ function removeFromCart(itemIndex) {
     let cart = getCart();
     cart.splice(itemIndex, 1);
 
-    setCookie("cart, JSON.stringify(cart), 7);
+    setCookie("cart", JSON.stringify(cart), 7);
     displayCartItems();
     updateCartBadge();
 }
@@ -87,7 +87,7 @@ function removeFromCart(itemIndex) {
 document.addEventListener("DOMContentLoaded", () => {
     updateCartBadge();
 
-    document.querySelectorAll(".button).forEach(button => {
+    document.querySelectorAll(".button").forEach(button => {
         button.addEventListener("click", addToCart);
     });
 
