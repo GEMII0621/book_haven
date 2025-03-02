@@ -37,7 +37,6 @@ function showPopup(message) {
     if (badge) {
         badge.textContent = cart.length;
     }
-}
 
 function addToCart(event) {
     event.preventDefault();
