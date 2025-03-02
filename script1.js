@@ -51,8 +51,18 @@ function addToCart(event) {
     updateCartBadge();
 }
 
+function removeFromCart(itemIndex) {
+    let cart = getCart();
+    cart.splice(itemIndex, 1);
+
+    setCookie("cart", JSON.stringify(cart), 7);
+    displayCartItems();
+    updateCartBadge();
+}
+
 function displayCartItems() {
     const cartItemsContainer = document.getElementById("cart-items");
+    const cartTotalElement = document.getElementById("cart-total");
     if (!cartItemsContainer) return;
 
     let cart = getCart();
@@ -60,8 +70,11 @@ function displayCartItems() {
 
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your Cart is Empty</p>";
+        cartTotalElement.textContent = "$0.00";
         return;
     }
+    
+    let totalPrice = 0;
 
     cart.forEach((item, index) => {
         const itemElement = document.createElement("div");
@@ -72,17 +85,18 @@ function displayCartItems() {
             <button onclick="removeFromCart(${index})">Remove Item</button>
         `;
         cartItemsContainer.appendChild(itemElement);
+
+        totalPrice += item.price;
     });
+
+    cartTotalElement.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
-function removeFromCart(itemIndex) {
-    let cart = getCart();
-    cart.splice(itemIndex, 1);
-
-    setCookie("cart", JSON.stringify(cart), 7);
+document.getElementById("empty-cart")?.addEventListener("click, function() {
+    setCookie("cart", JSON.stringify([]), 7);
     displayCartItems();
     updateCartBadge();
-}
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     updateCartBadge();
