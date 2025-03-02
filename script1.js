@@ -37,12 +37,13 @@ function showPopup(message) {
     if (badge) {
         badge.textContent = cart.length;
     }
+}
 
 function addToCart(event) {
     event.preventDefault();
     const productElement = event.target.closest(".product");
     const productName = productElement.querySelector("p").textContent.trim();
-    const productPrice = 15.00;
+    const productPrice = parseFloat(productElement.querySelector("p:nth-oftype(2)".textContent.replace("Price: $", ""));
     const productImage = productElement.querySelector("img").src;
 
     let cart = getCart();
