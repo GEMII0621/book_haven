@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Haven</title>
     <link rel="stylesheet" href="styles1.css">
+    <script src="script1.js" defer></script>
 </head>
 <body>
      <header>
@@ -28,21 +29,28 @@
     </header>
     
     <main>
-      <div id="view-cart" class="shopping-cart">
-        <p>Your Cart is Empty</p>
+        <h2>Your Cart</h2>
+        
+      <div id="cart-items" class="cart-items-container">
       </div>
-      <button id="empty-cart" class="cart-button">Remove Item</button><br><br>
-        <h2>Items in Cart</h2>
-        <div id="cart-items"></div>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="newsletter">
-                <form action="/newsletter.php">
-                    <label for="email">Sign up for our Newsletter:</label>
-                    <input type="email" id="email" name="email">
-                    <input type="submit" class="submit-btn" value="Submit">
-                </form>
+
+    <br>
+    <p>Cart Total: <span id="cart-total">$0.00</span>span></p>
+        
+    <div class="cart-actions"
+      <button id="empty-cart" class="cart-button">Remove Item</button>
+        <button class="cart-button">Checkout</button>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="newsletter">
+            <form action="/newsletter.php">
+                <label for="email">Sign up for our Newsletter:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
             </div>
             <div class="contact">
                 <p>Contact Us: (123)456-7890 | info@bookhaven.com</p>
