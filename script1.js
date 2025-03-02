@@ -27,6 +27,11 @@ function updateCartBadge() {
     if (cartCountElement) {
         cartCountElement.textContent = `View Items (${cart.length})`;
     }
+}
+
+function showPopup(message) {
+    alert(message);
+}
 
     const badge = document.getElementById("cart-badge");
     if (badge) {
@@ -36,7 +41,6 @@ function updateCartBadge() {
 
 function addToCart(event) {
     event.preventDefault();
-
     const productElement = event.target.closest(".product");
     const productName = productElement.querySelector("p").textContent.trim();
     const productPrice = 15.00;
@@ -47,12 +51,12 @@ function addToCart(event) {
 
     setCookie("cart", JSON.stringify(cart), 7);
     updateCartBadge();
+    showPopup(`${productName} has been added to the cart!`);
 }
 
 function removeFromCart(itemIndex) {
     let cart = getCart();
     cart.splice(itemIndex, 1);
-
     setCookie("cart", JSON.stringify(cart), 7);
     displayCartItems();
     updateCartBadge();
@@ -73,7 +77,6 @@ function displayCartItems() {
     }
     
     let totalPrice = 0;
-
     cart.forEach((item, index) => {
         const itemElement = document.createElement("div");
         itemElement.className = "cart-item";
@@ -83,7 +86,6 @@ function displayCartItems() {
             <button onclick="removeFromCart(${index})">Remove Item</button>
         `;
         cartItemsContainer.appendChild(itemElement);
-
         totalPrice += item.price;
     });
 
