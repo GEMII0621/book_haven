@@ -3,7 +3,7 @@
             const [name, value] = cookie.split("=");
             cookies[name] = decodeURIComponent(value);
             return cookies;
-        }, {});
+        }, {}) : {};
  }
 
 function setCookie(name, value, days) {
