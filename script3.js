@@ -59,7 +59,7 @@ if (newsletterForm) {
             alert("Thank you for signing up for our Newsletter!");
         }
     });
-  });
+  };
 
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
