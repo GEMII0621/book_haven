@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const searchForms = document.querySelectorAll(".search-section form");
     searchForms.forEach((form) => {
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent form from reloading page
+            event.preventDefault();
             const searchInput = form.querySelector("input[type='search']");
             const searchValue = searchInput.value.trim();
 
