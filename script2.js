@@ -1,20 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-  const searchForms = document.querySelectorAll(".form-table form");
-    searchForms.forEach((form) => {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-            const searchInput = form.querySelector("input[type='text']");
-            const searchValue = searchInput.value.trim();
-
-if (searchValue === "") {
-                alert("Please enter a search term.");
-                return;
-            }
-
-            alert(`Form Successfully Submitted!`);
-        });
+    document.getElementById("formQ").addEventListener("submit", function(event) {
+        var fullname = document.getElementById("fullname").value.trim();
+        var email = document.getElementById("qccemail").value.trim();
+        var phone = document.getElementById("pnumber").value.trim();
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z]{2,6}$/;
+        var phonePattern = /^\d{10}$/;
+    
+        if (fullname === "") {
+           alert("Please enter a name.");
+          event.preventDefault();
+          } else if (email === "") {
+           alert("Please enter a valid email address.");
+          event.preventDefault();
+        } else if (!emailPattern.test(email)) {
+           alert("Please enter a valid email address.");
+          event.preventDefault();
+        } else if (pnumber === "") {
+          alert("Please enter a phone number.");
+          event.preventDefault();
+        } else if (!phonePattern.test(phone)) {
+           alert("Please enter a valid 10-digit phone number.");
+          event.preventDefault();
+        } else {
+          alert(`Form Successfully Submitted!`);
+        }
     });
+});
 
     const newsletterForm = document.querySelector(".newsletter form");
     if (newsletterForm) {
