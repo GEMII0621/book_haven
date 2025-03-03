@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
           if (isChecked && isAmountFilled) {
               alert("Thank you for making a donation, and helping our community learn to read!");
+               form.submit();
           } else{
-              event.preventDefault();
               alert("Please check at least one box and enter a donation amount for at least one Organization!");
           }
       });
