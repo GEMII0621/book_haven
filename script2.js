@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (fullname === "") {
            alert("Please enter a name.");
           event.preventDefault();
-          } else if (email === "") {
+        } else if (email === "") {
            alert("Please enter a valid email address.");
           event.preventDefault();
         } else if (!emailPattern.test(email)) {
