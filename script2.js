@@ -1,3 +1,26 @@
+function getCookies(){
+     return document.cookie ? document.cookie.split("; ").reduce((cookies, cookie) => {
+            const [name, value] = cookie.split("=");
+            cookies[name] = decodeURIComponent(value);
+            return cookies;
+        }, {}) : {};
+ }
+
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+}
+
+function getCart() {
+    const cookies = getCookies();
+    return cookies.cart ? JSON.parse(cookies.cart) : [];
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("formQ").addEventListener("submit", function(event) {
         var fullname = document.getElementById("fullname").value.trim();
