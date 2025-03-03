@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var fullname = document.getElementById("fullname").value.trim();
         var email = document.getElementById("qccemail").value.trim();
         var phone = document.getElementById("pnumber").value.trim();
-        var emailPattern = /^[a-zA-Z0-9._-]+\[a-zA-Z]{2,6}$/;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var phonePattern = /^\d{10}$/;
     
         if (fullname === "") {
