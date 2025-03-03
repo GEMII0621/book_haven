@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
               alert("Thank you for making a donation, and helping our community learn to read!");
           } else{
               event.preventDefault();
-              alert("Please check at least one box and enter a dobation amount for at least one Organization!");
+              alert("Please check at least one box and enter a donation amount for at least one Organization!");
           }
       });
    });
