@@ -27,22 +27,22 @@ function updateCartBadge() {
     if (cartCountElement) {
         cartCountElement.textContent = `View Items (${cart.length})`;
     }
+
+    const badge = document.getElementById("cart-badge");
+    if (badge) {
+        badge.textContent = cart.length;
+    }
 }
 
 function showPopup(message) {
     alert(message);
 }
 
-    const badge = document.getElementById("cart-badge");
-    if (badge) {
-        badge.textContent = cart.length;
-    }
-
 function addToCart(event) {
     event.preventDefault();
     const productElement = event.target.closest(".product");
     const productName = productElement.querySelector("p").textContent.trim();
-    const productPrice = parseFloat(productElement.querySelector("p:nth-oftype(2)".textContent.replace("Price: $", "")));
+    const productPrice = parseFloat(productElement.querySelector("p:nth-of-type(2)").textContent.replace("Price: $", ""));
     const productImage = productElement.querySelector("img").src;
 
     let cart = getCart();
