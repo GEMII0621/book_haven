@@ -4,7 +4,7 @@ function getCart() {
 
 function updateCartBadge() {
     const cart = getCart();
-    const cartCountElement = document.querySelectorAll("#cart-count");
+    const cartCountElements = document.querySelectorAll("#cart-count");
     cartCountElements.forEach(element => {
         element.textContent = cart.length;
     });
