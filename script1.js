@@ -1,5 +1,5 @@
 function getCart() {
-    return cookies.cart ? JSON.parse(sessionStorage.getItem('cart')) : [];
+    sessionStorage.getItem('cart') ? JSON.parse(sessionStorage.getItem('cart')) : [];
 }
 
 function updateCartBadge() {
