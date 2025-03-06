@@ -89,7 +89,7 @@ document.getElementById("view-items").addEventListener("click", function(event) 
     document.getElementById("cart-modal").style.display = "block";
 });
 
-document.getElementByClassName("close")[0].addEventListener("click", function() {
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
     document.getElementById("cart-modal").style.display = "none";
 });
 
