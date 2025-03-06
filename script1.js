@@ -86,16 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById("view-items").addEventListener("click", function(event) {
     event.preventDefault();
-    document.getElementById("cart-modal".style.display = "block";
+    document.getElementById("cart-modal").style.display = "block";
 });
 
 document.getElementByClassName("close")[0]addEventListener("click", function() {
-    document.getElementById("cart-modal".style.display = "none";
+    document.getElementById("cart-modal").style.display = "none";
 });
 
 window.addEventListener("click", function(event) {
     if (event.target == document.getElementById("cart-modal")) {
-        document.getElementById("cart-modal".style.display = "none";
+        document.getElementById("cart-modal").style.display = "none";
     }
 });
 
