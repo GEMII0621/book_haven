@@ -25,6 +25,7 @@ function addToCart(event) {
     cart.push({name: productName, price: productPrice, image: productImage });
 
     sessionStorage.setItem('cart', JSON.stringify(cart));
+    console.log('Cart after adding item:', cart);
     updateCartBadge();
     showPopup(`${productName} has been added to the cart!`);
 }
@@ -43,6 +44,7 @@ function displayCartItems() {
     if (!cartItemsContainer) return;
 
     let cart = getCart();
+    console.log('Cart before displaying items', cart);
     cartItemsContainer.innerHTML = "";
 
     if (cart.length === 0) {
@@ -87,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("view-items").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("cart-modal").style.display = "block";
+    displayCartItems();
 });
 
 document.getElementsByClassName("close")[0].addEventListener("click", function() {
