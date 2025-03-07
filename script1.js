@@ -73,7 +73,7 @@ function displayCartItems() {
             <button onclick="removeFromCart(${index})">Remove Item</button>
         `;
         cartItemsContainer.appendChild(itemElement);
-        totalPrice += item.price;
+        totalPrice += item.price * item.quantity;
     });
 
     cartTotalElement.textContent = `$${totalPrice.toFixed(2)}`;
