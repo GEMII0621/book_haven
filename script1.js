@@ -9,7 +9,7 @@ function getCart() {
 
 function updateCartBadge() {
     let cart = getCart();
-    let totatItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     document.querySelectorAll("#cart-count").forEach(element => {
         element.textContent = totalItems;
     });
@@ -28,10 +28,10 @@ function addToCart(event) {
     const productImage = productElement.querySelector("img").src;
 
     let cart = getCart();
-    letexistingProduct = cart.find(item => item.id === productId);
+    let existingProduct = cart.find(item => item.id === productId);
 
     if (existingProduct) {
-        existingProduct.quantify++;
+        existingProduct.quantity++;
     } else {
         cart.push({id: productId, name: productName, price: productPrice, image: productImage, quantity: 1 });
     }
@@ -80,7 +80,7 @@ function displayCartItems() {
 }
 
 function processOrder() {
-    sessionStorage.setItem('cart', JSON.stringify({}));
+    sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
     updateCartBadge();
     showPopup("Thank you for your purchase.");
