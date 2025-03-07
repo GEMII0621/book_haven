@@ -69,10 +69,6 @@ function displayCartItems() {
     cartTotalElement.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
-document.getElementById("checkout")?.addEventListener("click", function() {
-    processOrder();
-});
-
 function processOrder() {
     sessionStorage.setItem('cart', JSON.stringify({}));
     displayCartItems();
@@ -111,6 +107,10 @@ window.addEventListener("click", function(event) {
     if (event.target == document.getElementById("cart-modal")) {
         document.getElementById("cart-modal").style.display = "none";
     }
+});
+
+document.getElementById("checkout")?.addEventListener("click", function() {
+    processOrder();
 });
 
 const newsletterForm = document.querySelector(".newsletter form");
