@@ -1,6 +1,6 @@
 function getCart() {
     try {
-        let cart = JSON.parse(sessionStorage.getItem('cart'))
+        let cart = JSON.parse(sessionStorage.getItem('cart'));
         return Array.isArray(cart) ? cart : [];
     } catch (e) {
         return [];
