@@ -69,6 +69,14 @@ function displayCartItems() {
     cartTotalElement.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
+function processOrder() {
+
+    sessionStorage.setItem('cart', JSON.stringify({}));
+    displayCartItems();
+    updateCartBadge();
+    showPopup("Thank you for your purchase.");
+}
+
 document.getElementById("empty-cart")?.addEventListener("click", function() {
    sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
