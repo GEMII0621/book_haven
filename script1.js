@@ -108,10 +108,11 @@ document.addEventListener("DOMContentLoaded", () => {
    sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
     updateCartBadge();
-        if (cart.length === 0) {
-        showPopup("No item(s) in the cart.")
-        } else  {
-            showPopup("Item(s) removed from the cart.")
+    if (cart.length === 0) {
+        showPopup("No item(s) in the cart.");
+    } else  {
+        showPopup("Item(s) removed from the cart.");
+    }
 });
 
 
