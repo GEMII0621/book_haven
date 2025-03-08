@@ -100,14 +100,15 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartBadge();
     displayCartItems();
 
-    document.querySelectorAll("add-to-cart, .button").forEach(button => {
-        button.addEventListener("click", addToCart);
-    });
+document.querySelectorAll("add-to-cart, .button").forEach(button => {
+    button.addEventListener("click", addToCart);
+});
 
-    document.getElementById("empty-cart")?.addEventListener("click", () => {
-   sessionStorage.setItem('cart', JSON.stringify([]));
+document.getElementById("empty-cart")?.addEventListener("click", () => {
+    const cart = getCart();
+    sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
-    updateCartBadge();
+    updateCartBadge(); 
     if (cart.length === 0) {
         showPopup("No item(s) in the cart.");
     } else  {
