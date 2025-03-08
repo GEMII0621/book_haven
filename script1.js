@@ -74,7 +74,7 @@ function displayCartItems() {
         itemElement.className = "cart-item";
         itemElement.innerHTML = `
             <img src="${item.image}" alt="${item.name}" style="width:50px; height:50px;">
-            <p>${item.name} - $${item.price.toFixed(2)}</p>
+            <p>${item.name} - $${item.price.toFixed(2)} x ${item.quantity}</p>
             <button onclick="removeFromCart(${index})">Remove Item</button>
         `;
         cartItemsContainer.appendChild(itemElement);
