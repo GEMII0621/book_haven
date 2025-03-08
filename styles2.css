@@ -127,8 +127,8 @@ main h4 {
 }
 
 .team-img {
-    width: 100%;
-    max-width: 300px;
+    width: auto;
+    max-width: 200px;
     height: auto;
     text-align: center;
 }
