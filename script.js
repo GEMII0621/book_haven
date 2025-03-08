@@ -4,19 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Book Haven | 123 Bookstore Rd | Bookstore, SC 12345");
     });
 
-const searchForms = document.querySelectorAll(".search-section form");
+    const searchForms = document.querySelectorAll(".search-section form");
     searchForms.forEach((form) => {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
-            const searchInput = form.querySelector("input[type='search']");
-            const searchValue = searchInput.value.trim();
+            const searchInputs = form.querySelector("input[type='search']");
+            searchInputs.forEach((searchInput) => {
+                const searchValue = searchInput.value.trim();
 
-if (searchValue === "") {
-                alert("Please enter a search term.");
-                return;
-            }
+                if (searchValue === "") {
+                    alert("Please enter a search term.");
+                    return;
+                }
 
-            alert(`Searching for: ${searchValue}`);
+                alert(`Searching for: ${searchValue}`);
+            });
         });
     });
 
