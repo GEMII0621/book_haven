@@ -48,6 +48,10 @@ function removeFromCart(itemIndex) {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     displayCartItems();
     updateCartBadge();
+    if (cart.length === 0) {
+        showPopup("No Item(s) in the Cart.")
+    } else {
+        showPopup(`${productName} has been removed from the cart!`);
 }
 
 function displayCartItems() {
@@ -83,7 +87,8 @@ function displayCartItems() {
 function processOrder() {
     let cart = getCart();
     if (cart.length === 0) {
-       return;
+        showPopup("No item(s) in the cart.")
+        return;
     }
     sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
