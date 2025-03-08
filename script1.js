@@ -80,6 +80,10 @@ function displayCartItems() {
 }
 
 function processOrder() {
+    let cart = get cart();
+    if (cart.length === 0) {
+       return;
+    }
     sessionStorage.setItem('cart', JSON.stringify([]));
     displayCartItems();
     updateCartBadge();
