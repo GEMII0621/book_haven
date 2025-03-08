@@ -39,6 +39,7 @@ function addToCart(event) {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     updateCartBadge();
     showPopup(`${productName} has been added to the cart!`);
+    displayCartItems();
 }
 
 function removeFromCart(itemIndex) {
