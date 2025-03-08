@@ -8,20 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
     searchForms.forEach((form) => {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
-            const searchInputs = form.querySelectorAll("input[type='search']");
+            const searchInputs = form.querySelector("input[type='search']");
+            const searchValue = searchInput.value.trim();
             const submitButton = form.querySelector("input[type='submit']");
             const searchTerm = submitButton.value;
-            
-            searchInputs.forEach((searchInput) => {
-                const searchValue = searchInput.value.trim();
+      
+            if (searchValue === "") {
+                alert("Please enter a search term.");
+                return;
+            }
 
-                if (searchValue === "") {
-                    alert("Please enter a search term.");
-                    return;
-                }
-
-                alert(`Searching for ${searchTerm}: ${searchValue}`);
-            });
+            alert(`Searching for ${searchTerm}: ${searchValue}`);
         });
     });
 
