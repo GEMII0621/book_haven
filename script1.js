@@ -44,6 +44,7 @@ function addToCart(event) {
 
 function removeFromCart(itemIndex) {
     let cart = getCart();
+    const productName = cart[itemIndex].name;
     cart.splice(itemIndex, 1);
     sessionStorage.setItem('cart', JSON.stringify(cart));
     displayCartItems();
@@ -52,6 +53,7 @@ function removeFromCart(itemIndex) {
         showPopup("No Item(s) in the Cart.")
     } else {
         showPopup(`${productName} has been removed from the cart!`);
+    }
 }
 
 function displayCartItems() {
