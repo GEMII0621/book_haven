@@ -81,7 +81,7 @@ function displayCartItems() {
 }
 
 function processOrder() {
-    let cart = get cart();
+    let cart = getCart();
     if (cart.length === 0) {
        return;
     }
