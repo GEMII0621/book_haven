@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Please enter a search term.");
                     return;
                 }
-                alert(`Searching for ${searchTerm}: ${searchValue}`);
+                alert(`Searching for ${submitButton.value}: ${searchValue}`);
         });
     });
 });
