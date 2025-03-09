@@ -62,8 +62,8 @@ function updateCartItemQuantity(index,newQuantity) {
          sessionStorage.setItem('cart', JSON.stringyfy(cart));
          displayCartItems();
          updateCartBadge();
-       }
-    }
+      }
+   }
 }
 
 function displayCartItems() {
