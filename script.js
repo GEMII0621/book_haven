@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Please enter a search term.");
                     return;
                 }
-                alert(`Searching for ${searchTerm});
+                alert(`Searching for ${searchTerm}: ${searchValue}');
             });
         });
     });
