@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchForms.forEach((form) => {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
-            const searchInputs = form.querySelector("input[type='search']");
+            const searchInputs = form.querySelectorAll("input[type='search']");
             const submitButton = form.querySelector("input[type='submit']");
             const searchTerm = submitButton.value;
 
