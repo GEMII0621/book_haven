@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const searchValue = searchInput.value.trim();
                 if (searchValue === "") {
                     alert("Please enter a search term.");
+                    event.preventDefault();
                     return;
                 }
-                alert(`Searching for ${searchTerm}: ${searchValue}');
+                alert(`Searching for ${searchTerm}: ${searchValue}`);
             });
         });
     });
