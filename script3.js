@@ -1,34 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    const forms = document.querySelectorAll('.form form');
+    const forms = document.querySelectorAll('.form');
     forms.forEach(form => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
-        const submitButtons = form.querySelectorAll("input[type='submit']");
-         
+        const submitButton = form.querySelector("input[type='submit']");
+
         if (submitButton) {
             submitButton.addEventListener("click", function (event) {
             event.preventDefault();
-            let isChecked = false;
-            let isAmountFilled = false;
+            let isChecked = Array.from(checkboxes).some(checkbox=> checkbox.checked);
+            let isAmountFilled = Array.from(amounts).some(amount => amount.value && parseFloat(amount.value) > 0);
               
-            checkboxes.forEach(checkbox => {
-                 if (checkbox.checked) {
-                      isChecked = true;
-                 }
-            });
-              
-            amounts.forEach(amount => {
-                 if (amount.value && parseFloat(amount.value) > 0) {
-                      isAmountFilled = true;
-                 }
-            });
-  
             if (isChecked && isAmountFilled) {
-                 alert("Thank you for making a donation, and helping our community learn to read!");
+                alert("Thank you for making a donation, and helping our community learn to read!");
                  form.submit();
             } else{
-                 alert("Please check at least one box and enter a donation amount for at least one Organization!");
+                alert("Please check at least one box and enter a donation amount for at least one Organization!");
             }
         });
     }
@@ -37,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const newsletterForm = document.querySelector(".newsletter form");
 if (newsletterForm) {
     newsletterForm.addEventListener("submit", function (event) {
-        const emailInputElement = document.getElementById("email");
         const emailInput = document.getElementById("email").value.trim();
         if (!validateEmail(emailInput)) {
             event.preventDefault();
