@@ -1,55 +1,59 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-    const forms = document.querySelectorAll('.form form');
-    forms.forEach(form => {
-        const schoolsCheckboxes = form.querySelectorAll('input[type="checkbox"]');
-        const schoolsAmounts = form.querySelectorAll('input[type="number"]');
-        const sheltersCheckboxes = form.querySelectorAll('input[type="checkbox"]');
-        const sheltersAmounts = form.querySelectorAll('input[type="number"]');
-        const charitiesCheckboxes = form.querySelectorAll('input[type="checkbox"]');
-        const charitiesAmounts = form.querySelectorAll('input[type="number"]');
-        const submitButtons = form.querySelectorAll("input[type='submit']");
+    const schoolsForm = document.querySelector('#schools');
+    const sheltersForm = document.querySelector('#shelters');
+    const charitiesForm = document.querySelector('#charities');
 
-        submitButtons.forEach((submitButton, index) => {
-            submitButton.addEventListener("click", function (event) {
-                event.preventDefault();
-                
-                const isSchoolsValid = Array.from(schoolsCheckboxes).some(checkbox=> checkbox.checked);
-                                       Array.from(schoolsAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
-                const isSheltersValid = Array.from(sheltersCheckboxes).some(checkbox=> checkbox.checked);
-                                        Array.from(sheltersAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
-                const isCharitiesValid = Array.from(charitiesCheckboxes).some(checkbox=> checkbox.checked);
-                                         Array.from(charitiesAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
-                      
-                if (isSchoolsValid || isSheltersValid || isCharitiesValid) {
-                    alert("Thank you for making a donation, and helping our community learn to read!");
-                    form.submit();
-                } else{
-                    alert("Please check at least one box and enter a donation amount for at least one Organization!");
-                }
-            });
-        });
+    function validateForm(form, checkboxesSelector, amountsSelector) {
+        const checkboxes = form.querySelectorAll(checkboxesSelector);
+        const amounts = form.querySelectorAll(amountsSelector);
+
+        const isValid = Array.from(checkboxes).some(checkbox => checkbox.checked) &&
+                        Array.from(amounts).some(amount => amount.value && parseFloat(amount.value) > 0);
+
+        return isValid;
+    }
+
+    function handleFormSubmit(event, form, checkboxesSelector, amountsSelector) {
+        event.preventDefault();
+
+        if (validateForm(form, checkboxesSelector, amountsSelector)) {
+            alert("Thank you for making a donation, and helping our community learn to read!");
+            form.submit();
+        } else {
+            alert("Please check at least one box and enter a donation amount for at least one Organization!");
+        }
+    }
+
+    schoolsForm.querySelector('input[type="submit"]').addEventListener('click', function(event) {
+        handleFormSubmit(event, schoolsForm, 'input[type="checkbox"]', 'input[type="number"]');
     });
-    
-     
+
+    sheltersForm.querySelector('input[type="submit"]').addEventListener('click', function(event) {
+        handleFormSubmit(event, sheltersForm, 'input[type="checkbox"]', 'input[type="number"]');
+    });
+
+    charitiesForm.querySelector('input[type="submit"]').addEventListener('click', function(event) {
+        handleFormSubmit(event, charitiesForm, 'input[type="checkbox"]', 'input[type="number"]');
+    });
+
     const newsletterForm = document.querySelector(".newsletter form");
     if (newsletterForm) {
-        newsletterForm.addEventListener("submit", function (event) {
+        newsletterForm.addEventListener("submit", function(event) {
             const emailInput = document.getElementById("email").value.trim();
             if (!validateEmail(emailInput)) {
                 event.preventDefault();
                 alert("Please enter a valid email address.");
             } else {
-                alert("Thank you for signing up for our Newletter!");
+                alert("Thank you for signing up for our Newsletter!");
             }
         });
     }
-    
+
     function validateEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
-    
+
     const currentPage = window.location.pathname.split("/").pop();
     document.querySelectorAll(".nav-links a").forEach((link) => {
         if (link.getAttribute("href") === currentPage) {
