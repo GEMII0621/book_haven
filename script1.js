@@ -1,4 +1,4 @@
-function getCart() {
+ function getCart() {
     try {
         let cart = JSON.parse(sessionStorage.getItem('cart'));
         return Array.isArray(cart) ? cart : [];
@@ -50,6 +50,20 @@ function removeFromCart(itemIndex) {
     displayCartItems();
     updateCartBadge();
     showPopup(`${productName} has been removed from the cart!`);
+}
+
+function updateCartItemQuantity(index,newQuantity) {
+    let cart = getCart ();
+    if(cart[index]) {
+      if (newQuantity <= 0){
+         removeFromCart(index);
+      } else {
+          cart[index].quantity = newQuantity;
+         sessionStorage.setItem('cart', JSON.stringyfy(cart));
+         displayCartItems();
+         updateCartBadge();
+       }
+    }
 }
 
 function displayCartItems() {
