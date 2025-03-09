@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    const forms = document.querySelectorAll('form');
+    const forms = document.querySelectorAll('.form form');
     forms.forEach(form => {
          const checkboxes = form.querySelectorAll('input[type="checkbox"]');
          const amounts = form.querySelectorAll('input[type="number"]');
          const submitButtons = form.querySelectorAll("input[type='submit']");
          
-         submitButtons.forEach((submitButton, index) => {
+         submitButtons.forEach('click', function(event) {
               event.preventDefault();
               let isChecked = false;
               let isAmountFilled = false;
