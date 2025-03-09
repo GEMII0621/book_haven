@@ -1,26 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    const forms = document.querySelectorAll('.form');
+    const forms = document.querySelectorAll('.form form');
     forms.forEach(form => {
-        const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-        const amounts = form.querySelectorAll('input[type="number"]');
-        const submitButton = form.querySelector("input[type='submit']");
+        const schoolsCheckboxes = form.querySelectorAll('input[type="checkbox"]');
+        const schoolsAmounts = form.querySelectorAll('input[type="number"]');
+        const sheltersCheckboxes = form.querySelectorAll('input[type="checkbox"]');
+        const sheltersAmounts = form.querySelectorAll('input[type="number"]');
+        const charitiesCheckboxes = form.querySelectorAll('input[type="checkbox"]');
+        const charitiesAmounts = form.querySelectorAll('input[type="number"]');
+        const submitButtons = form.querySelectorAll("input[type='submit']");
 
-        if (submitButton) {
-            submitButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            let isChecked = Array.from(checkboxes).some(checkbox=> checkbox.checked);
-            let isAmountFilled = Array.from(amounts).some(amount => amount.value && parseFloat(amount.value) > 0);
-              
-            if (isChecked && isAmountFilled) {
-                alert("Thank you for making a donation, and helping our community learn to read!");
-                 form.submit();
-            } else{
-                alert("Please check at least one box and enter a donation amount for at least one Organization!");
+        if (submitButtons.length) {
+        submitButtons.forEach((submitButton, index) => {
+            if (submitButton) {
+                submitButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+                
+                    const isSchoolsValid = Array.from(schoolsCheckboxes).some(checkbox=> checkbox.checked);
+                                           Array.from(schoolsAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
+                    const isSheltersValid = Array.from(sheltersCheckboxes).some(checkbox=> checkbox.checked);
+                                           Array.from(sheltersAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
+                    const isCharitiesValid = Array.from(charitiesCheckboxes).some(checkbox=> checkbox.checked);
+                                           Array.from(charitiesAmounts).some(amount => amount.value && parseFloat(amount.value) > 0);
+                      
+                    if (isSchoolsValid || isSheltersValid || isCharitiesValid) {
+                        alert("Thank you for making a donation, and helping our community learn to read!");
+                         form.submit();
+                    } else{
+                        alert("Please check at least one box and enter a donation amount for at least one Organization!");
+                    }
+                });
             }
         });
     }
 });
+    
      
 const newsletterForm = document.querySelector(".newsletter form");
 if (newsletterForm) {
