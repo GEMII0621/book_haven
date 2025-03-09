@@ -49,9 +49,7 @@ function removeFromCart(itemIndex) {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     displayCartItems();
     updateCartBadge();
-    if (cart.length === 0) {
-        showPopup(`${productName} has been removed from the cart!`);
-    }
+    showPopup(`${productName} has been removed from the cart!`);
 }
 
 function displayCartItems() {
