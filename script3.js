@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const amounts = form.querySelectorAll('input[type="number"]');
         const submitButtons = form.querySelectorAll("input[type='submit']");
          
-        submitButtons.forEach((submitButton, index) => {
+        if (submitButton) {
             submitButton.addEventListener("click", function (event) {
             event.preventDefault();
             let isChecked = false;
