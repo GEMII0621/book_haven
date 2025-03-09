@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchForms = document.querySelectorAll(".search-section form");
     searchForms.forEach((form) => {
         const searchInputs = form.querySelectorAll("input[type='search']");
-        const submitButton = form.querySelector("input[type='submit']");
+        const submitButtons = form.querySelector("input[type='submit']");
 
         submitButtons.forEach((submitButton, index) => {
-            submitButtons.addEventListener("click", function (event) {
+            submitButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 const searchInput = searchInputs[index];
                 const searchValue = searchInput.value.trim();
