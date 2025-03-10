@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     forms.forEach(form => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
-        const submitButtons = form.querySelectorAll('input[type="submit"]');
-
-        submitButtons.forEach((submitButton, index) => {
+        const submitButton = form.querySelector('input[type="submit"]');
 
         if (submitButton)
             submitButton.addEventListener("click", function (event) {
