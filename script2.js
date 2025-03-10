@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("clearFormButton").addEventListener("click", function() {
         document.getElementById("formQ").reset();
         localStorage.removeItem("formQData");
+    });
 
     const savedData = JSON.parse(localStorage.getItem("formQData"));
     if (savedData) {
