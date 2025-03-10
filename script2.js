@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
           alert(`Form Successfully Submitted!`);
         }
     });
+
+    document.getEelmentById("clearFormButton").addEventListener("click", function() {
+        document.getElementById("formQ".reset();
+    }
 });
 
 const newsletterForm = document.querySelector(".newsletter form");
