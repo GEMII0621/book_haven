@@ -213,6 +213,20 @@ team-table h3 {
     width: 40%;
 }
 
+.form-table input[type="button"]:hover {
+    background-color: #7A4F73;
+    color: #FFF7EE;
+}
+
+.form-table input[type="button"] {
+    background-color: #F7B3CC;
+    font-weight: bold;
+    color: #131C26;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 40%;
+}
+
 .form-table input[type="submit"]:hover {
     background-color: #7A4F73;
     color: #FFF7EE;
