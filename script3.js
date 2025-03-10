@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const forms = document.querySelectorAll('.form form');
-    forms.forEach(form => {
+    forms.forEach((form) => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
         const submitButtons = form.querySelectorAll('input[type="submit"]');
