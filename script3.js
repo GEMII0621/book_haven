@@ -53,4 +53,4 @@ document.addEventListener('DOMContentLoaded', function() {
             link.style.textDecoration = "underline";
         }
     });
-});
+);
