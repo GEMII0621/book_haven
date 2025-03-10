@@ -1,37 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const forms = document.querySelectorAll('.donations-section form');
-    forms.forEach((form) => {
+    const donationForms = document.querySelectorAll('.donations-section form');
+    donationForms.forEach(form => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
-        const submitButtons = form.querySelectorAll('input[type="submit"]');
+        const submitButton = form.querySelector('input[type="submit"]');
 
-        submitButtons.forEach((submitButton, index) => {
+        if (submitButton) {
             submitButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 
-                    let valid = true;
-                    checkboxes.forEach((checkbox, index) => {
-                        const amount = amounts[index];
-                        if (checkbox.checked && (!amount.value || isNaN(amount.value) || Number(amount.value) <= 0)) {
-                            valid = false;
-                            amount.classList.add('error')
-                        } else {
-                            amount.classList.remove('error');
+                    let isChecked = false;
+                let isAmountFilled = false:
+                    checkboxes.forEach((checkbox => {
+                        if (checkbox.checked) {
+                            isChecked = true;
+                        }
+
+                    });
+
+                    amounts.forEach(amount => {
+                        if (parseFloat(amount.value) > 0) {
+                            isAmountFilled = true;
                         }
                     });
-    
-                    if (!valid) {
-                       alert("Please check at least one box and enter a donation amount for at least one Organization!");
-                    } else{
-                         alert("Thank you for making a donation, and helping our community learn to read!");
-                        form.submit();
+
+                    if (isChecked && isAmountFilled) {
+                        alert("Thank you for making a donation, and helping our community learn to read!");
+                    } else {
+                        alert("Please check at least one box and enter a donation amount for at least one Organization!");
                     }
                 });
-            });
+            }
         });
     });
-    
     
     const newsletterForm = document.querySelector(".newsletter form");
     if (newsletterForm) {
