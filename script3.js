@@ -4,23 +4,28 @@ document.addEventListener('DOMContentLoaded', function() {
     forms.forEach(form => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
-        const submitButton = form.querySelector('input[type="submit"]');
+        const submitButtons = form.querySelectorAl('input[type="submit"]');
 
-        if (submitButton)
+        submitButtons.forEach((submitButton, index) => {
             submitButton.addEventListener("click", function (event) {
                 event.preventDefault();
-                    let isValid = false;
+                
+                    let valid = true;
                     checkboxes.forEach((checkbox, index) => {
-                        const amountInput = amounts[index];
-                        if (checkbox.checked && amountInput && parsefloat(amountInput.value) > 0) {
-                            isValid = true;
+                        const amount = amounts[index];
+                        if (checkbox.checked && (!amount.value || isNaN(amount.value) || Number(amount.value) <= 0)) {
+                            valid = false;
+                            amount.classList.add('error')
+                        } else {
+                            amount.classList.remove('error');
                         }
+                    });
     
-                    if (isValid) {
-                        alert("Thank you for making a donation, and helping our community learn to read!");
-                        form.submit();
+                    if (!valid) {
+                       alert("Please check at least one box and enter a donation amount for at least one Organization!");
                     } else{
-                        alert("Please check at least one box and enter a donation amount for at least one Organization!");
+                         alert("Thank you for making a donation, and helping our community learn to read!");
+                        form.submit();
                     }
                 });
             });
