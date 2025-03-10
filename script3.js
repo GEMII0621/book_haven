@@ -6,13 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const amounts = form.querySelectorAll('input[type="number"]');
         const submitButtons = form.querySelectorAll('input[type="submit"]');
 
-        if (submitButton)
-            submitButtons.forEach((submitButton, index) => {
-                submitButton.addEventListener("click", function (event) {
-                    event.preventDefault();
-    
-                    let isValid = false;
+        submitButtons.forEach((submitButton, index) => {
 
+        if (submitButton)
+            submitButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                    let isValid = false;
                     checkboxes.forEach((checkbox, index) => {
                         const amountInput = amounts[index];
                         if (checkbox.checked && amountInput && parsefloat(amountInput.value) > 0) {
