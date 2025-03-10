@@ -10,29 +10,28 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.addEventListener("click", function (event) {
                 event.preventDefault();
                 
-                    let isChecked = false;
+                let isChecked = false;
                 let isAmountFilled = false;
-                    checkboxes.forEach((checkbox) => {
-                        if (checkbox.checked) {
-                            isChecked = true;
-                        }
+                checkboxes.forEach((checkbox) => {
+                    if (checkbox.checked) {
+                        isChecked = true;
+                    }
 
-                    });
+                });
 
-                    amounts.forEach(amount => {
-                        if (parseFloat(amount.value) > 0) {
-                            isAmountFilled = true;
-                        }
-                    });
-
-                    if (isChecked && isAmountFilled) {
-                        alert("Thank you for making a donation, and helping our community learn to read!");
-                    } else {
-                        alert("Please check at least one box and enter a donation amount for at least one Organization!");
+                amounts.forEach(amount => {
+                    if (parseFloat(amount.value) > 0) {
+                        isAmountFilled = true;
                     }
                 });
-            }
-        });
+
+                if (isChecked && isAmountFilled) {
+                    alert("Thank you for making a donation, and helping our community learn to read!");
+                } else {
+                    alert("Please check at least one box and enter a donation amount for at least one Organization!");
+                }
+            });
+        }
     });
     
     const newsletterForm = document.querySelector(".newsletter form");
