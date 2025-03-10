@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const donationForms = document.querySelectorAll('.donations-section form');
-    donationForms.forEach(form => {
+    donationForms.forEach((form) => {
         const checkboxes = form.querySelectorAll('input[type="checkbox"]');
         const amounts = form.querySelectorAll('input[type="number"]');
         const submitButton = form.querySelector('input[type="submit"]');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                     let isChecked = false;
                 let isAmountFilled = false;
-                    checkboxes.forEach((checkbox => {
+                    checkboxes.forEach((checkbox) => {
                         if (checkbox.checked) {
                             isChecked = true;
                         }
