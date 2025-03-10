@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.getEelmentById("clearFormButton").addEventListener("click", function() {
+    document.getEelmentById("clearFormButton").addEventListener("submit", function() {
         document.getElementById("formQ").reset();
     });
 });
