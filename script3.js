@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 event.preventDefault();
                 
                     let isChecked = false;
-                let isAmountFilled = false:
+                let isAmountFilled = false;
                     checkboxes.forEach((checkbox => {
                         if (checkbox.checked) {
                             isChecked = true;
