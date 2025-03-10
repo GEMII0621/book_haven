@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
                     let isValid = false;
 
-                    checkboxes.forEach((checkbox, index) =>
+                    checkboxes.forEach((checkbox, index) => {
                         const amountInput = amounts[index];
                         if (checkbox.checked && amountInput && parsefloat(amountInput.value) > 0) {
                             isValid = true;
