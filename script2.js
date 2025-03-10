@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.getEelmentById("formQ").addEventListener("BUTTON", function(event) {
+    document.getEelmentById("formQ").addEventListener("button", function(event) {
         document.getElementById("formQ").reset();
     });
 });
