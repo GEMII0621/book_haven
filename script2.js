@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var fullname = document.getElementById("fullname").value.trim();
         var email = document.getElementById("qccemail").value.trim();
         var phone = document.getElementById("pnumber").value.trim();
+        var phone = document.getElementById("comments").value.trim();
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var phonePattern = /^\d{10}$/;
     
@@ -22,13 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
            alert("Please enter a valid 10-digit phone number.");
           event.preventDefault();
         } else {
+          localStorage.setItem(formQData", JSON.stringify({fullname, email, phone, message }));
           alert(`Form Successfully Submitted!`);
         }
     });
 
     document.getElementById("clearFormButton").addEventListener("click", function() {
         document.getElementById("formQ").reset();
-    });
+        localStorage.removeItem("formQData");
+
+    const savedData = JSON.parse(localStorage.getItem("formQData"));
+    if (savedData) {
+        document.getElementById("fullname").value = savedData.fullname;
+        document.getElementById("qccemail").value = savedData.email;
+        document.getElementById("pnumber").value = savedData.phone;
+        document.getElementById("message").value = savedData.message;
+    }
 });
 
 const newsletterForm = document.querySelector(".newsletter form");
